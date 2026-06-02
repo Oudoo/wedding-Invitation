@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+      // Detect base path: if on GitHub Pages, use repository name subdirectory; otherwise use root
+      const base = window.location.hostname.includes('github.io') ? '/wedding-Invitation/' : '/';
+      document.write('<base href="' + base + '">');
+
+      // SPA Routing Fix - ensures React Router knows how to serve /invite/... paths
+      (function() {
+        const path = window.location.pathname;
+        if (path === base || path.endsWith('index.html')) {
+          const targetPath = base + 'invite/demo-981d24';
+          window.history.replaceState({}, '', targetPath);
+        }
+      })();
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico">
+    <title>Our Wedding Invitation</title>
+    <meta name="description" content="You are cordially invited to celebrate our special day with us.">
+    <meta name="author" content="Ahmed & Hagar">
+
+    <!-- Load Local Wedding Invitation Configuration -->
+    <script src="/assets/invitation-config.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="/assets/css2" rel="stylesheet">
+    <link rel="stylesheet" as="style" href="/assets/css2(1)" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@400;500;600&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"></noscript>
+
+    <script type="module" crossorigin="" src="/assets/index--6NqYhMF.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-CdUtDg8Z.css">
+</head>
+
+<body>
+    <div id="root">
+      <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+        <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+      </div>
+      <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+      <div class="min-h-[100dvh] bg-[#f5f0e6] flex justify-center overflow-x-hidden">
+        <div class="bg-background relative shadow-2xl overflow-hidden" style="opacity: 1; font-family: 'Cinzel Decorative'; width: min(100vw, 390px); min-height: 100dvh; max-width: 390px;">
+          <div class="w-full overflow-hidden relative" style="height: 844px; background-color: rgb(255, 255, 255);">
+            <div class="absolute inset-0 overflow-hidden" style="opacity: 0; transition: opacity 700ms ease-in; z-index: -1;">
+              <video src="./assets/palm-zoom-theme-CXFg41UQ.mp4" class="absolute inset-0 w-full h-full" playsinline="" loop="" preload="auto" style="object-fit: cover;"></video>
+              <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.1);"></div>
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-500" style="opacity: 0; background: linear-gradient(135deg, rgb(245, 240, 230) 0%, rgb(235, 229, 217) 25%, rgb(232, 226, 213) 50%, rgb(240, 234, 217) 75%, rgb(245, 240, 230) 100%);">
+              <div class="absolute inset-0" style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;); opacity: 0.05; mix-blend-mode: multiply;"></div>
+            </div>
+            <div class="absolute inset-0 overflow-hidden" style="opacity: 1; transition: opacity 0.3s; z-index: 50; pointer-events: auto; background-color: transparent;">
+              <video src="./assets/opening-animation.mp4" class="absolute inset-0 w-full h-full object-cover cursor-pointer" playsinline="" preload="auto" style="opacity: 1;"></video>
+              <div class="absolute bottom-12 left-0 right-0 flex justify-center z-10" style="opacity: 1;">
+                <p class="text-sm tracking-widest uppercase" style="color: rgb(26, 26, 26); font-family: Cinzel; text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;">Tap to open</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
